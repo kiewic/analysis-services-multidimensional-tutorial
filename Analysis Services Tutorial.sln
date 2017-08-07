@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Analysis Services Tutorial", "Analysis Services Tutorial\Analysis Services Tutorial.dwproj", "{39E16509-0495-432D-9456-03EFAD390846}"
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "Multidimensional Tutorial", "Multidimensional Tutorial\Multidimensional Tutorial.dwproj", "{39E16509-0495-432D-9456-03EFAD390846}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

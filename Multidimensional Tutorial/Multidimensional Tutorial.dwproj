@@ -56,14 +56,14 @@
           <ConfigurationSetting>
             <Id>Adventure Works DW2012</Id>
             <Name>Adventure Works DW2012</Name>
-            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=pug2.database.windows.net;Persist Security Info=True;Password=;User ID=;Initial Catalog=AdventureWorksDW2012</Value>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=localhost;Integrated Security=SSPI;Initial Catalog=AdventureWorksDW2012</Value>
           </ConfigurationSetting>
         </ConnectionMappings>
         <ConnectionSecurityMappings>
           <ConfigurationSetting>
             <Id>Adventure Works DW2012</Id>
             <Name>Adventure Works DW2012</Name>
-            <Value xsi:type="xsd:int">1</Value>
+            <Value xsi:type="xsd:int">0</Value>
           </ConfigurationSetting>
         </ConnectionSecurityMappings>
       </Options>

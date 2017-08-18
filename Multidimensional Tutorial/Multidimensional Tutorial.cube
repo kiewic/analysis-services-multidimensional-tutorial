@@ -759,6 +759,21 @@ SCOPE([Measures].[Sales Amount]);
         FORMAT_STRING(THIS)='#,##0.0';
     END SCOPE;
 END SCOPE;
+SCOPE([Measures].[Total Product Cost]);
+    BACK_COLOR(THIS)=RGB(10,20,255);
+    SCOPE([Order Date].[Calendar Year].[Calendar Year].&amp;[2005]);
+        FORMAT_STRING(THIS)='#,##0.0';
+        BACK_COLOR(THIS)=RGB(255,10,10);
+    END SCOPE;
+    SCOPE([Order Date].[Date Key].&amp;[20050713]);
+        FORMAT_STRING(THIS)='"MXN $"#,##0.00';
+        BACK_COLOR(THIS)=RGB(50,50,50);
+    END SCOPE;
+    SCOPE([Order Date].[Calendar Year].&amp;[2006]);
+        FORMAT_STRING(THIS)='#,##0.00000';
+        BACK_COLOR(THIS)=RGB(55,255,55);
+    END SCOPE;
+END SCOPE;
 </Text>
         </Command>
       </Commands>

@@ -610,6 +610,19 @@
             </Source>
           </Source>
         </Measure>
+        <Measure dwd:design-time-name="de98d762-a83b-45a9-8045-6ea5d5176c36">
+          <ID>Foo</ID>
+          <Name>Foo Cost</Name>
+          <AggregateFunction>FirstChild</AggregateFunction>
+          <Source dwd:design-time-name="e80b3b78-d164-4c79-98d7-95b0bf22fc01">
+            <DataType>Double</DataType>
+            <NullProcessing>Preserve</NullProcessing>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="558ac286-089b-469a-833c-03451b5ae445">
+              <TableID>dbo_FactInternetSales</TableID>
+              <ColumnID>Foo</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
       </Measures>
       <StorageMode>Molap</StorageMode>
       <ProcessingMode>Regular</ProcessingMode>
@@ -774,6 +787,9 @@ SCOPE([Measures].[Total Product Cost]);
         FORMAT_STRING(THIS)='#,##0.00000';
         BACK_COLOR(THIS)=RGB(55,255,55);
     END SCOPE;
+END SCOPE;
+SCOPE([Measures].[Foo Cost]);
+    FORMAT_STRING(THIS)='#,##0.00000;\N\e\g;\Z\e\r\o;\N\u\l\l';
 END SCOPE;
 SCOPE([Measures].[Tax Amt]);
     SCOPE([Product].[Class].&amp;[L]);

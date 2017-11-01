@@ -585,6 +585,7 @@
               <ColumnID>TaxAmt</ColumnID>
             </Source>
           </Source>
+          <FormatString>0.0%</FormatString>
         </Measure>
         <Measure dwd:design-time-name="a47d4a74-2e8c-4355-8e3c-57dc40636817">
           <ID>Freight</ID>
@@ -772,6 +773,11 @@ SCOPE([Measures].[Total Product Cost]);
     SCOPE([Order Date].[Calendar Year].&amp;[2006]);
         FORMAT_STRING(THIS)='#,##0.00000';
         BACK_COLOR(THIS)=RGB(55,255,55);
+    END SCOPE;
+END SCOPE;
+SCOPE([Measures].[Tax Amt]);
+    SCOPE([Product].[Class].&amp;[L]);
+        FORMAT_STRING(THIS)='"MXN $"#,##0.00';
     END SCOPE;
 END SCOPE;
 </Text>

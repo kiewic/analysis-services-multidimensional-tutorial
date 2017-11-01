@@ -796,6 +796,7 @@ SCOPE([Measures].[Tax Amt]);
         FORMAT_STRING(THIS)='"MXN $"#,##0.00';
     END SCOPE;
 END SCOPE;
+CREATE MEMBER CURRENTCUBE.[Measures].[Test] AS 0.75, Format_String = "0.0%";
 </Text>
         </Command>
       </Commands>
